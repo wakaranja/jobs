@@ -1,0 +1,126 @@
+h4 {
+text-align: center;
+font-family: 'Source Code Pro', serif;
+}
+
+b{
+color: blue;
+padding-right:5em;
+}
+
+table{
+align: center;
+}
+
+td{
+padding-left: 1em;
+padding-right: 1em;
+font-family: Source Code Pro;
+}
+
+
+
+.box h3{
+	text-align:left;
+	position:relative;
+	top:0px;
+	font-family: arial;
+	}
+	
+	.box {
+	width:40%;
+	height:250px;
+	background-color:#eba417;
+	margin:40px auto;
+	padding-left:10px;
+	padding-top:5px;
+	}
+	
+	.effect2 {
+	-webkit-box-shadow: 0px 2px 13px 3px rgba(0,0,0,0.63);
+	-moz-box-shadow: 0px 2px 13px 3px rgba(0,0,0,0.63);
+	box-shadow: 0px 2px 13px 3px rgba(0,0,0,0.63);
+	
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+	}
+	
+	
+	
+	.topbox {
+	width:100%;
+	height:50px;
+	background-color:#eba417;
+	margin:40px auto;
+	font-family: 'Source Code Pro', serif;
+	}
+	
+	h3{
+	text-align:center;
+	position:relative;
+	top:10px;
+	color: #FFF;
+	font-family: Microsoft yahei UI light;
+	}
+	
+	.PostJob {
+	width:47%;
+	height:75%;
+	padding-left:10px;
+	float:left;
+	
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+	background-color:#eba417;
+	
+	}
+	
+	.SearchJob {
+	width:47%;
+	height:75%;
+	float:right;
+	padding-left:10px;
+	display:inline-block;
+	background-color:#eba417;
+	
+	-webkit-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+	
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+	}
+	
+
+        .AllJobs {
+	width:47%;
+	height:75%;
+	float:right;
+	padding-left:10px;
+	display:inline-block;
+	background-color:#eba417;
+        align: center;
+	
+	-webkit-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.75);
+	
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+	}
+	
+	p{
+	font-family: arial;
+	}
