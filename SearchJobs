@@ -1,0 +1,71 @@
+<html>
+<head><Title>Search results</title>
+<link type="text/css" rel="stylesheet" href="jobscss.css"/>
+</head>
+<body bgcolor="lavender">
+
+
+
+<?php
+$connection=mysql_connect("localhost","username","password");
+if(!$connection){
+die("Database Connection failed:" .mysql_error());
+}
+$db_select=mysql_select_db("mydatabase",$connection);
+if(!$db_select){
+die("Database Selection failed:" .mysql_error());
+}
+
+
+
+$value1=$_POST['subject'];
+$value2=$_POST['subject3'];
+	if($value2=="AnyOther")
+	{
+	$result=mysql_query("SELECT * FROM vacancies WHERE (subject1='$value1' || subject2='$value1')",$connection);
+	}
+	else
+	{
+	$result=mysql_query("SELECT * FROM vacancies WHERE (subject1= '$value1' || subject2 = '$value1') and (subject1='$value2' || subject2='$value2')",$connection);
+	}
+
+if($result === FALSE) { 
+    die(mysql_error()); // TODO: better error handling
+}
+
+
+$rows=mysql_num_rows($result);
+echo '<div class="topbox">';
+echo '<h3>';
+echo 'We have ' .($rows) .' results for ' .($value1) .' and ' .($value2) .'<br><br>';
+echo '</h3>';
+echo '</div>';
+
+
+
+for($j=0; $j<$rows; ++$j)
+{
+$row=mysql_fetch_row($result);
+echo '<div class="box effect2">';
+echo '<h3>';
+	
+echo 'subject 1:		 '.($row[1]).'<br>';
+echo 'Subject 2:		 '.($row[2]).'<br>';
+echo 'School:   		 '.($row[3]).'<br>';
+echo 'County:  		  	'.($row[4]).'<br>';
+echo 'Terms:   			  '.($row[5]).'<br>';
+echo 'Salary:  			  '.($row[6]).'<br>';
+echo 'Phone:   			  '.($row[7]).'<br>';
+echo 'Address:  		 '.($row[8]).'<br>';
+echo 'Email:    		 '.($row[9]).'<br>';
+echo "<tr>";
+echo '</h3>';
+echo '</div>';
+}
+
+mysql_close($connection);
+?>
+ 
+</body>
+</html>
+
